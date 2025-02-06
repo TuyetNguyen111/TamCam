@@ -1,0 +1,54 @@
+
+/* Tối ưu hóa cho màn hình di động */
+@media only screen and (max-width: 768px) {
+    .slider-container {
+        display: flex;
+        flex-direction: column; /* Hiển thị theo chiều dọc trên di động */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Đảm bảo các thẻ thẻ có chiều rộng phù hợp với màn hình */
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%; /* Đảm bảo ảnh không vượt ra ngoài */
+        height: auto;
+    }
+
+    .arrow-button {
+        display: none; /* Ẩn các nút điều hướng trên di động */
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 100%;
+        max-width: 600px; /* Đảm bảo modal không quá rộng */
+        margin: auto;
+    }
+}
+
+/* Điều chỉnh slider cho màn hình lớn */
+@media only screen and (min-width: 769px) {
+    .slider-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 30%;
+        margin: 0 10px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .arrow-button {
+        display: block; /* Hiển thị nút điều hướng trên màn hình lớn */
+    }
+}
